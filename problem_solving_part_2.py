@@ -47,5 +47,20 @@ else:
 n=int(input('Input n: '))
 n = (n-1) + (n)
 print(n)
+#Finonacci sequence starting at 0
+num_of_terms = int(input("Enter the number of terms you want to run: "))
+num_1 = 0
+num_2 = 1
+count = 0
 
-
+if num_of_terms <= 0:
+    print('Terms must be a positive intiger.')
+elif num_of_terms == 1: 
+    print(num_1)
+else: 
+    while count < num_of_terms:
+        print(num_1)
+        num_to_nth_terms = num_1 + num_2
+        num_1 = num_2
+        num_2=num_to_nth_terms
+        count+=1

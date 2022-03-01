@@ -43,6 +43,9 @@ else:
 
 
 
-#
+# Fibonacci
+n=int(input('Input n: '))
+n = (n-1) + (n)
+print(n)
 
 

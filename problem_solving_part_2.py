@@ -64,3 +64,21 @@ else:
         num_1 = num_2
         num_2=num_to_nth_terms
         count+=1
+
+# Fibonacci sequence starting at user input.
+
+num_1 = int(input('Enter a starting number for the sequence to begin: '))
+num_2 = num_1+1
+count = 0
+num_of_terms = int(input("Enter the number of terms you want to run: "))
+if num_of_terms <= 0:
+    print('Terms must be a positive intiger.')
+elif num_of_terms == 1: 
+    print(num_1)
+else: 
+    while count < num_of_terms:
+        print(num_1)
+        num_to_nth_terms = num_1 + num_2
+        num_1 = num_2
+        num_2=num_to_nth_terms
+        count+=1
